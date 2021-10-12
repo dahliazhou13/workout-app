@@ -1,0 +1,3 @@
+DROP TABLE Record;
+DROP TABLE Workout;
+DROP TABLE Exercise;

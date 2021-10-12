@@ -1,1 +1,11 @@
-INSERT INTO Exercise VALUES(1, 'Leg Press')
+INSERT INTO Exercise VALUES(1, 'Low Bar Squat');
+INSERT INTO Exercise VALUES(2, 'Lying Leg Curls');
+INSERT INTO Exercise VALUES(3, 'DB Reverse Lunges');
+
+INSERT INTO Workout VALUES(1, 12);
+
+INSERT INTO Record VALUES(1, 12, 10, 'Oct 11 2021 11:41 AM', 25);
+
+INSERT INTO Record VALUES(1, 12, 10, 'Oct 11 2021 11:42 AM', 90);
+
+INSERT INTO Record VALUES(1, 12, 12, 'Oct 11 2021 11:43 AM', 90);

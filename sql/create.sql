@@ -6,17 +6,16 @@ CREATE TABLE Exercise(
 CREATE TABLE Workout(
     exercise SERIAL,
     rep INT,
-    set INT,
-    PRIMARY KEY(exercise, rep, set),
+    PRIMARY KEY(exercise, rep),
     FOREIGN KEY(exercise) REFERENCES Exercise(id)
 );
 
 CREATE TABLE Record(
     exercise SERIAL,
     rep INT,
-    set INT,
+    actual INT,
     time TIMESTAMP,
     weight FLOAT,
-    PRIMARY KEY(exercise, rep, set, time, weight),
-    FOREIGN KEY(exercise, rep, set) REFERENCES Workout(exercise, rep, set)
+    PRIMARY KEY(exercise, rep, time, weight),
+    FOREIGN KEY(exercise, rep) REFERENCES Workout(exercise, rep)
 );
